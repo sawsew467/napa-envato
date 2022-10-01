@@ -30,7 +30,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "674px",
-      md: "936px",
+      md: "1176px",
     },
     margin: "0 auto",
     padding: {
@@ -52,7 +52,7 @@ const styles = {
     color: "#212121",
     fontFamily: "'Fraunces', serif",
     fontWeight: "600",
-    lineHeight: "1.1",
+    lineHeight: "60px",
     letterSpacing: "-0.5px",
     display: "inline",
   },
@@ -67,11 +67,12 @@ const styles = {
   featureList: {
     width: {
       xs: "100%",
-      md: "calc(100% - 412px)",
+      md: "calc(100% - 500px)",
     },
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
+    rowGap: "15px",
     marginTop: {
       xs: "75px",
       md: "0px",
@@ -82,13 +83,13 @@ const styles = {
     flexDirection: "column",
     width: {
       xs: "100%",
-      sm: "calc(50% - 50px)"
+      sm: "calc(50% - 50px)",
     },
     marginLeft: {
       xs: "0",
       md: "50px",
     },
-    marginBottom: "45px",
+    marginBottom: "30px",
   },
 };
 
@@ -128,7 +129,7 @@ function FeatureArea() {
               sx={{
                 width: {
                   xs: "100%",
-                  md: "376px",
+                  md: "476px",
                 },
               }}
             >
@@ -144,9 +145,9 @@ function FeatureArea() {
                     color: "#FC6B75",
                     fontFamily: "'Fraunces', serif",
                     position: "relative",
-                    lineHeight: "1.1",
+                    lineHeight: "60px",
                     marginBottom: "20px",
-                    fontWeight: "500",
+                    fontWeight: "600",
                     "&::before": {
                       content: '""',
                       position: "absolute",

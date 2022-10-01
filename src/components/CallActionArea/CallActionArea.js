@@ -16,7 +16,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "936px",
+      md: "1200px",
     },
     padding: "0 !important",
     display: "flex",

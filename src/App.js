@@ -25,7 +25,7 @@ function App() {
       {/* <PriceArea></PriceArea> */}
       <FunFactArea></FunFactArea>
       <CallActionArea></CallActionArea>
-      <Footer></Footer>
+      {/* <Footer></Footer> */}
     </>
   );
 }

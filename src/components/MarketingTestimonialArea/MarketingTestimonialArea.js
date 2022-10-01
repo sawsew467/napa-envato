@@ -6,7 +6,7 @@ const styles = {
     backgroundColor: "#212121",
     padding: {
       xs: "100px 0 0 0",
-      md: "100px 0"
+      md: "100px 0",
     },
     overflow: "hidden",
   },
@@ -14,7 +14,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "936px",
+      md: "1176px",
     },
     margin: "0 auto",
     padding: "0 !important",
@@ -49,7 +49,7 @@ function MarketingTestimonialArea() {
                 sx={{
                   fontSize: {
                     sm: "58px",
-                    md: "60px",
+                    md: "58px",
                   },
                   color: "#fff",
                   fontFamily: "'Fraunces', serif",
@@ -61,7 +61,7 @@ function MarketingTestimonialArea() {
                   sx={{
                     fontSize: {
                       sm: "58px",
-                      md: "60px",
+                      md: "58px",
                     },
                     color: "#FF824C",
                     fontFamily: "'Fraunces', serif",
@@ -77,8 +77,9 @@ function MarketingTestimonialArea() {
                   fontWeight: "400",
                   color: "#fff",
                   marginTop: "40px",
-                  marginBottom: "34px",
+                  marginBottom: "30px",
                   fontFamily: "'Arimo', sans-serif",
+                  lineHeight: "34px",
                 }}
               >
                 “Connect to a multitude of sources like files and feeds, popular
@@ -89,6 +90,7 @@ function MarketingTestimonialArea() {
                 sx={{
                   color: "#fff",
                   fontSize: "24px",
+                  lineHeight: "36px",
                   fontStyle: "italic",
                   display: "inline-block",
                   fontFamily: "'Arimo', sans-serif",
@@ -105,21 +107,52 @@ function MarketingTestimonialArea() {
                   CEO of youngtech
                 </Typography>
               </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  gap: "20px",
+                  marginTop: "30px"
+                }}
+              >
+                <div
+                  style={{
+                    width: "10px",
+                    height: "10px",
+                    borderRadius: "50%",
+                    backgroundColor: "#ff824c",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "10px",
+                    height: "10px",
+                    borderRadius: "50%",
+                    backgroundColor: "#555",
+                  }}
+                ></div>
+                <div
+                  style={{
+                    width: "10px",
+                    height: "10px",
+                    borderRadius: "50%",
+                    backgroundColor: "#555",
+                  }}
+                ></div>
+              </Box>
             </Grid>
             <Grid
               item={true}
-              
               sx={{
                 width: {
                   xs: "100%",
-                  md: "calc(100% - 492px)",
+                  md: "calc(100% - 715px)",
                 },
               }}
             >
               <Box
                 sx={{
                   marginTop: {
-                    xs: "130px",
+                    // xs: "130px",
                     md: "0",
                   },
                   position: "relative",
@@ -138,6 +171,10 @@ function MarketingTestimonialArea() {
                     bottom: "0",
                     backgroundColor: "#bfbae4",
                     width: "100%",
+                    marginTop: {
+                      xs: "130px",
+                      md: "0",
+                    },
                     height: "calc(100% - 85px)",
                     borderTopLeftRadius: "290px",
                     borderTopRightRadius: "290px",

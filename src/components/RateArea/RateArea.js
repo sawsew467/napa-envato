@@ -6,11 +6,12 @@ const styles = {
     backgroundColor: "#212121",
     paddingTop: {
       xs: "80px",
+      sm: "150px",
       md: "50px"
     },
     paddingBottom: {
       xs: "80px",
-      md: "100px"
+      md: "100px",
     },
     position: "relative",
   },
@@ -18,7 +19,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "936px",
+      md: "1176px",
     },
     margin: "0 auto",
     padding: {

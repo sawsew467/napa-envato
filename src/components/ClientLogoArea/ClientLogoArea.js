@@ -4,7 +4,7 @@ import React from "react";
 const styles = {
   containerFluid: {
     padding: {
-      xs: "70px 0",
+      xs: "80px 0",
       sm: "140px 0"
     },
     backgroundColor: "#F4F4F4",
@@ -15,6 +15,8 @@ const styles = {
   },
   subTitle: {
     fontSize: "25px",
+    lineHeight: "30px",
+    color: "#2C2C2C",
     textAlign: "center",
     fontFamily: "'Arimo', sans-serif",
     marginBottom: "70px"

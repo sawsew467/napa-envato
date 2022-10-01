@@ -4,7 +4,10 @@ import React from "react";
 const styles = {
   containerFluid: {
     paddingTop: "140px",
-    paddingBottom: "180px",
+    paddingBottom: {
+      xs: "70px",
+      md: "180px"
+    },
     backgroundColor: "#F4F4F4",
     display: "flex",
     flexDirection: "column",
@@ -22,7 +25,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "936px",
+      md: "1176px",
     },
     margin: "0 auto",
     padding: {
@@ -62,17 +65,17 @@ const styles = {
     overflow: "hidden",
   },
   content: {
-    // width: "calc(100% - 748px)",
+    boxSizing: "border-box",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    paddingLeft: {
+    marginLeft: {
       xs: "0",
-      md: "83px",
+      md: "120px",
     },
-    maxWidth: {
+    width: {
       xs: "100%",
-      md: "376px",
+      md: "476px",
     },
   },
   heading: {
@@ -80,19 +83,24 @@ const styles = {
       xs: "30px",
       md: "0",
     },
-    fontSize: "43px",
+    fontSize: {
+      xs: "43px",
+      sm: "43px",
+      md: "50px",
+    },
+    lineHeight: "1.1",
     color: "#212121",
     fontFamily: "'Fraunces', serif",
     fontWeight: "500",
-    lineHeight: "47.3px",
     letterSpacing: "-0.43px",
     display: "inline",
   },
   subHeading: {
     fontSize: "16px",
-    marginBottom: "20px",
+    lineHeight: "30px",
     color: "#414141",
-    marginTop: "16px",
+    marginBottom: "17px",
+    marginTop: "20px",
     fontFamily: "'Arimo', sans-serif",
   },
   link: {
@@ -128,12 +136,12 @@ function ExperienceArea() {
             sx={{
               width: {
                 xs: "376px",
-                sm: "auto"
+                sm: "auto",
               },
               position: "absolute",
               left: {
-                xs: "-24px",
-                sm: "-46px"
+                xs: "-26px",
+                sm: "-46px",
               },
               top: "32px",
               zIndex: "2",
@@ -146,16 +154,16 @@ function ExperienceArea() {
             sx={{
               width: {
                 xs: "180px",
-                sm: "auto"
+                sm: "auto",
               },
               position: "absolute",
               left: {
                 xs: "167px",
-                sm: "332px"
+                sm: "459px",
               },
               top: {
                 xs: "33px",
-                sm: "147px"
+                sm: "152px",
               },
               zIndex: "2",
             }}
@@ -190,11 +198,15 @@ function ExperienceArea() {
               <Typography
                 sx={{
                   display: "inline-block",
-                  fontSize: "43px",
+                  fontSize: {
+                    xs: "43px",
+                    sm: "43px",
+                    md: "50px",
+                  },
+                  lineHeight: "1.1",
                   color: "#FC6B75",
                   fontFamily: "'Fraunces', serif",
                   position: "relative",
-                  lineHeight: "47.3px",
                   // marginBottom: "20px",
                   letterSpacing: "-0.43px",
                   "&::before": {
@@ -209,11 +221,11 @@ function ExperienceArea() {
               >
                 customer
               </Typography>
-              &nbsp;experiences .
+              experiences .
             </Typography>
             <Typography sx={styles.subHeading}>
-              Lorem Ipsum is simply dummy text of the printing and <br></br>
-              typesetting industry. Lorem Ipsum has.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has.
             </Typography>
             <Link sx={styles.link} color="inherit">
               Learn more

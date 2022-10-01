@@ -12,7 +12,10 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    paddingBottom: "120px",
+    paddingBottom: {
+      xs: "110px",
+      sm:"150px"
+    },
   },
   heading: {
     width: {
@@ -27,25 +30,26 @@ const styles = {
       sm: "58px",
       md: "60px",
     },
-    fontWeight: "500",
+    fontWeight: "600",
     color: "#212121",
     fontFamily: "'Fraunces', serif",
     textAlign: "center",
     lineHeight: {
       xs: "45.6px", 
-      sm: "78px"
+      sm: "1.2"
     },
-    // letterSpacing: "-0.01em"
   },
   subHeading: {
     fontSize: "18px",
-    lineHeight: "30px",
-    color: "#000",
+    color: "#494949",
     lineHeight: {
       xs: "45.6px", 
-      sm: "78px"
+      sm: "30px"
     },
-    marginBottom: "48px",
+    marginBottom: "75px",
+    marginTop: {
+      md: "20px"
+    },
     fontFamily: "'Arimo', sans-serif",
     textAlign: "center",
   },
@@ -53,7 +57,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "936px",
+      md: "1176px",
     },
     // width: "1176px",
     display: "flex",
@@ -142,13 +146,13 @@ function SolutionArea() {
                 sm: "58px",
                 md: "60px",
               },
-              fontWeight: "500",
+              fontWeight: "600",
               color: "#FC6B75",
               fontFamily: "'Fraunces', serif",
               position: "relative",
               lineHeight: {
                 xs: "45.6px", 
-                sm: "78px"
+                sm: "1.2"
               },
               marginBottom: "20px",
               "&::before": {
@@ -163,7 +167,7 @@ function SolutionArea() {
           >
             solution
           </Typography>
-          &nbsp;to all <br></br> of your activities
+          &nbsp;to all of your activities
         </Typography>
         <Typography sx={styles.subHeading}>
           You said I'd feel better if I just worked hard without lifting me up

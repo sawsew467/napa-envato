@@ -95,7 +95,7 @@ const styles = {
     },
     border: "1px solid #fff",
     borderRadius: "3px",
-    marginLeft: "24px",
+    marginLeft: "25px",
     fontFamily: "'Arimo', sans-serif",
     cursor: "pointer",
     transition: "all 0.3s",

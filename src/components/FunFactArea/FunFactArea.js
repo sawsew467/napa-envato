@@ -4,14 +4,17 @@ import React from "react";
 
 const styles = {
   containerFluid: {
-    padding: "120px 0",
+    padding: {
+      xs: "80px 0",
+      sm: "120px 0",
+    },
     backgroundColor: "#f4f4f4",
   },
   container: {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "912px",
+      md: "1200px",
     },
     display: "flex",
     flexDirection: {
@@ -26,7 +29,7 @@ const styles = {
   card: {
     width: {
       xs: "100%",
-      sm: "auto",
+      sm: "calc(100% / 3)",
       md: "25%",
     },
     display: "flex",
@@ -39,6 +42,10 @@ const styles = {
     backgroundColor: "transparent",
     boxShadow: "none",
     border: "none",
+    marginBottom: {
+      xs: "25px",
+      sm: "0",
+    },
   },
   title: {
     margin: "0 auto",

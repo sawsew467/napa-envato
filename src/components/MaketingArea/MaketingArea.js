@@ -8,39 +8,47 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    // padding: "0 12px",
     maxWidth: {
       xs: "696px",
       sm: "720px",
-      md: "900px",
+      md: "1200px",
     },
+    padding: "0 12px !important",
   },
   title: {
-    marginTop: "170px",
+    maxWidth: "900px",
+    marginTop: {
+      xs: "130px",
+      sm: "170px",
+    },
     marginBottom: "18px",
     display: "inline-block",
     fontSize: {
       xs: "48px !important",
       sm: "48px !important",
-      md: "58px !important",
+      md: "80px !important",
     },
+    fontWeight: "500",
     color: "#fff",
     fontFamily: "'Fraunces', serif",
     textAlign: "center",
     lineHeight: {
       xs: "1.2",
       sm: "72px",
-      md: "78px",
+      md: "96px",
     },
-    letterSpacing: "-0.58px"
   },
   subTitle: {
     textAlign: "center",
-    fontSize: "20px",
+    fontSize: {
+      xs: "20px",
+      sm: "20px",
+      md: "24px",
+    },
     color: "#fff",
     lineHeight: {
-      md: "30px",
       xs: "30px",
+      md: "30px",
     },
     fontFamily: "'Arimo', sans-serif",
     marginBottom: "24px",
@@ -68,7 +76,7 @@ const styles = {
     },
     width: {
       xs: "100%",
-      sm: "auto"
+      sm: "auto",
     },
     boxSizing: "border-box",
   },
@@ -96,12 +104,16 @@ const styles = {
     },
     width: {
       xs: "100%",
-      sm: "auto"
+      sm: "auto",
     },
     boxSizing: "border-box",
   },
   marketingImg: {
     position: "relative",
+    padding: {
+      xs: "0",
+      sm: "0 50px",
+    },
     // width: "1080px",
   },
   dashBoard: {
@@ -115,9 +127,18 @@ const styles = {
       sm: "block",
     },
     position: "absolute",
-    width: "200px",
-    left: "-87px",
-    top: "-42px",
+    width: {
+      xs: "200px",
+      md: "auto",
+    },
+    left: {
+      xs: "-38px",
+      md: "-400px",
+    },
+    top: {
+      sm: "-40px",
+      md: "-137px",
+    },
   },
   card2: {
     display: {
@@ -125,8 +146,14 @@ const styles = {
       sm: "block",
     },
     position: "absolute",
-    width: "200px",
-    right: "-48px",
+    width: {
+      xs: "200px",
+      md: "auto",
+    },
+    right: {
+      sm: "-100px",
+      md: "-260px",
+    },
     top: "-172px",
   },
 };
@@ -140,21 +167,23 @@ function MaketingArea() {
       >
         <Container sx={styles.container}>
           <Typography sx={styles.title} className="title">
-            Transform the way you think <br></br> about&nbsp;
+            Transform the way you think about&nbsp;
             <Typography
               sx={{
                 display: "inline-block",
                 fontSize: {
                   xs: "48px !important",
                   sm: "48px !important",
-                  md: "58px !important",
+                  md: "80px !important",
                 },
                 color: "#FC6B75",
                 fontFamily: "'Fraunces', serif",
                 position: "relative",
+                fontWeight: "500",
                 lineHeight: {
                   xs: "1.2",
                   sm: "72px",
+                  md: "96px",
                 },
 
                 "&::before": {
@@ -165,8 +194,8 @@ function MaketingArea() {
                   backgroundColor: "#FC6B75",
                   bottom: {
                     xs: "10px",
-                    sm:"17px",
-                    md: "14px"
+                    sm: "17px",
+                    md: "17px",
                   },
                 },
               }}
@@ -190,7 +219,7 @@ function MaketingArea() {
               marginTop: "24px",
               marginBottom: {
                 xs: "20px",
-                sm: "80px"
+                sm: "80px",
               },
               width: {
                 xs: "100%",
