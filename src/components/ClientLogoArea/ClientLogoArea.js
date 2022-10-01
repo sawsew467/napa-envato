@@ -27,7 +27,7 @@ const styles = {
     justifyContent: "space-around",
     width: {
       sm: "696px",
-      md: "1176px",
+      md: "936px",
     },
     margin: "0 auto",
   },

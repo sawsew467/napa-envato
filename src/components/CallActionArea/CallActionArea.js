@@ -10,15 +10,20 @@ const styles = {
     background: `url(${BackgroundImg}) no-repeat scroll center 0/cover`,
     backgroundColor: "#f9dfdf",
     position: "relative",
+    overflow: "hidden",
   },
   container: {
-    width: "1180px",
+    width: {
+      xs: "366px",
+      sm: "696px",
+      md: "936px",
+    },
+    padding: "0 !important",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "center",
     margin: "0 auto",
-    padding: "0",
   },
   backgroundImg: {
     position: "absolute",
@@ -32,7 +37,10 @@ const styles = {
   },
   heading: {
     margin: "0 auto",
-    fontSize: "70px",
+    fontSize: {
+      xs: "46px",
+      sm: "70px"
+    },
     color: "#212121",
     fontFamily: "'Fraunces', serif",
     textAlign: "center",
@@ -43,7 +51,7 @@ const styles = {
     position: "relative",
   },
   subHeading: {
-    width: "50%",
+    // width: "50%",
     textAlign: "center",
     fontSize: "18px",
     lineHeight: "30px",
@@ -78,12 +86,10 @@ function CallActionArea() {
           alt="Paella dish"
         ></CardMedia>
         <Container sx={styles.container}>
-          <Typography
-            sx={styles.heading}
-          >
+          <Typography sx={styles.heading}>
             Never miss an update
             <div
-              sx={{
+              style={{
                 position: "absolute",
                 right: "-48px",
                 top: "-36px",
@@ -93,17 +99,12 @@ function CallActionArea() {
               <img src={require("../../assets/callActionArea/line.png")}></img>
             </div>
           </Typography>
-          <Typography
-            sx={styles.subHeading}
-          >
+          <Typography sx={styles.subHeading}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
             <br></br>
             do eiusmod tempor incididunt ut labore.
           </Typography>
-          <Link
-            sx={styles.link}
-            color="inherit"
-          >
+          <Link sx={styles.link} color="inherit">
             Work with us
             <ArrowForwardIcon
               sx={{

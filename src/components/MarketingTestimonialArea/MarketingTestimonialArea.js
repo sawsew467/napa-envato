@@ -14,7 +14,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "1176px",
+      md: "936px",
     },
     margin: "0 auto",
     padding: "0 !important",
@@ -34,6 +34,7 @@ const styles = {
       xs: "flex-start",
       md: "center",
     },
+    // columnGap: "24px"
   },
 };
 
@@ -107,10 +108,11 @@ function MarketingTestimonialArea() {
             </Grid>
             <Grid
               item={true}
+              
               sx={{
                 width: {
                   xs: "100%",
-                  md: "auto",
+                  md: "calc(100% - 492px)",
                 },
               }}
             >

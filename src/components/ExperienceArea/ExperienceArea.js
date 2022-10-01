@@ -9,43 +9,83 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     position: "relative",
+    paddingLeft: {
+      xs: "12px",
+      md: "0",
+    },
+    paddingRight: {
+      xs: "12px",
+      md: "0",
+    },
   },
   container: {
-    width: "1180px",
+    width: {
+      xs: "366px",
+      sm: "696px",
+      md: "936px",
+    },
     margin: "0 auto",
-    padding: "0",
+    padding: {
+      xs: "0",
+      sm: "0 12px !important",
+    },
     display: "flex",
-    flexDirection: "row",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
     justifyContent: "space-between",
     position: "relative",
   },
   exAppImg: {
-    width: "700px",
+    width: {
+      xs: "100%",
+      sm: "700px",
+    },
     display: "flex",
     justifyContent: "center",
     position: "relative",
   },
   roundSharp: {
-    width: "515px",
-    height: "515px",
+    width: {
+      xs: "320px",
+      sm: "515px",
+    },
+    height: {
+      xs: "320px",
+      sm: "515px",
+    },
     borderRadius: "50%",
     backgroundColor: "#d3c3fc",
     position: "relative",
+    zIndex: "1",
     overflow: "hidden",
   },
   content: {
-    width: "calc(100% - 748px)",
+    // width: "calc(100% - 748px)",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
+    paddingLeft: {
+      xs: "0",
+      md: "83px",
+    },
+    maxWidth: {
+      xs: "100%",
+      md: "376px",
+    },
   },
   heading: {
-    fontSize: "50px",
+    marginTop: {
+      xs: "30px",
+      md: "0",
+    },
+    fontSize: "43px",
     color: "#212121",
     fontFamily: "'Fraunces', serif",
     fontWeight: "500",
-    lineHeight: "1.1",
-    letterSpacing: "-0.01em",
+    lineHeight: "47.3px",
+    letterSpacing: "-0.43px",
     display: "inline",
   },
   subHeading: {
@@ -86,11 +126,17 @@ function ExperienceArea() {
             component="img"
             image={require("../../assets/experienceArea/dash_board.png")}
             sx={{
-              width: "auto",
+              width: {
+                xs: "376px",
+                sm: "auto"
+              },
               position: "absolute",
-              left: "-38px",
+              left: {
+                xs: "-24px",
+                sm: "-46px"
+              },
               top: "32px",
-              zIndex: "1",
+              zIndex: "2",
             }}
             alt="Paella dish"
           ></CardMedia>
@@ -98,11 +144,20 @@ function ExperienceArea() {
             component="img"
             image={require("../../assets/experienceArea/mobile.png")}
             sx={{
-              width: "auto",
+              width: {
+                xs: "180px",
+                sm: "auto"
+              },
               position: "absolute",
-              left: "462px",
-              top: "147px",
-              zIndex: "1",
+              left: {
+                xs: "167px",
+                sm: "332px"
+              },
+              top: {
+                xs: "33px",
+                sm: "147px"
+              },
+              zIndex: "2",
             }}
             alt="Paella dish"
           ></CardMedia>
@@ -114,6 +169,10 @@ function ExperienceArea() {
                 width: "auto",
                 position: "absolute",
                 bottom: "-155px",
+                display: {
+                  xs: "none",
+                  md: "block",
+                },
               }}
               alt="Paella dish"
             ></CardMedia>
@@ -127,16 +186,17 @@ function ExperienceArea() {
           </Box>
           <Box className="content" sx={styles.content}>
             <Typography sx={styles.heading}>
-              We deliver the <br></br> better&nbsp;
+              We deliver the better&nbsp;
               <Typography
                 sx={{
-                  display: "inline",
-                  fontSize: "50px",
+                  display: "inline-block",
+                  fontSize: "43px",
                   color: "#FC6B75",
                   fontFamily: "'Fraunces', serif",
                   position: "relative",
-                  lineHeight: "1.1",
-                  marginBottom: "20px",
+                  lineHeight: "47.3px",
+                  // marginBottom: "20px",
+                  letterSpacing: "-0.43px",
                   "&::before": {
                     content: '""',
                     position: "absolute",
@@ -149,7 +209,7 @@ function ExperienceArea() {
               >
                 customer
               </Typography>
-              <br></br>experiences .
+              &nbsp;experiences .
             </Typography>
             <Typography sx={styles.subHeading}>
               Lorem Ipsum is simply dummy text of the printing and <br></br>

@@ -22,12 +22,18 @@ function Footer() {
       <Box
         sx={{
           paddingTop: "120px",
+          paddingLeft: {},
+          paddingRight: {},
           backgroundColor: "#212121",
         }}
       >
         <Box
           sx={{
-            width: "1180px",
+            width: {
+              xs: "366px",
+              sm: "696px",
+              md: "936px",
+            },
             display: "flex",
             flexDirection: "row",
             margin: "0 auto",
@@ -36,7 +42,7 @@ function Footer() {
         >
           <Box
             sx={{
-              width: "calc(100% / 3)",
+              width: "calc(100% / 2)",
             }}
           >
             <div>
@@ -91,7 +97,7 @@ function Footer() {
           </Box>
           <Box
             sx={{
-              width: "calc(100% / 4)",
+              width: "calc(100% / 2)",
               display: "flex",
               flexDirection: "column",
             }}
@@ -124,7 +130,7 @@ function Footer() {
           </Box>
           <Box
             sx={{
-              width: "calc(100% / 4)",
+              width: "calc(100% / 2)",
               display: "flex",
               flexDirection: "column",
             }}
@@ -157,7 +163,7 @@ function Footer() {
           </Box>
           <Box
             sx={{
-              width: "calc(100% / 6)",
+              width: "calc(100% / 2)",
               display: "flex",
               flexDirection: "column",
             }}

@@ -18,12 +18,12 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "1176px",
+      md: "936px",
     },
     margin: "0 auto",
     padding: {
       xs: "40px 30px !important",
-      md: "50px 70px !important",
+      md: "30px 30px !important",
     },
     backgroundColor: "#181818",
     border: "2px dashed #333",

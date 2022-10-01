@@ -18,7 +18,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "1176px",
+      md: "936px",
     },
     margin: "0 auto",
     display: "inline",
@@ -53,7 +53,7 @@ const styles = {
     width: {
       xs: "366px",
       sm: "696px",
-      md: "1176px",
+      md: "936px",
     },
     // width: "1176px",
     display: "flex",
@@ -163,7 +163,7 @@ function SolutionArea() {
           >
             solution
           </Typography>
-          &nbsp;to all of your activities
+          &nbsp;to all <br></br> of your activities
         </Typography>
         <Typography sx={styles.subHeading}>
           You said I'd feel better if I just worked hard without lifting me up

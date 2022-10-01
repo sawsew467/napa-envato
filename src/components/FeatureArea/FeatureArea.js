@@ -5,33 +5,55 @@ import React from "react";
 
 const styles = {
   containerFluid: {
-    padding: "0 60px",
+    padding: {
+      xs: "0 15px",
+      sm: "0 60px",
+    },
     backgroundColor: "#f4f4f4",
   },
   board: {
     maxWidth: "100%",
-    paddingTop: "140px",
-    paddingBottom: "100px",
+    paddingTop: {
+      xs: "80px",
+      md: "140px",
+    },
+    paddingBottom: {
+      sm: "50px",
+      md: "100px",
+    },
     margin: "0",
     backgroundColor: "#eaecf1",
     borderRadius: "10px",
     position: "relative",
   },
   container: {
-    width: "1180px",
+    width: {
+      xs: "366px",
+      sm: "674px",
+      md: "936px",
+    },
     margin: "0 auto",
-    padding: "0 !important",
+    padding: {
+      xs: "0 12px",
+      sm: "0 !important",
+    },
     display: "flex",
-    flexDirection: "row",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
     justifyContent: "space-between",
   },
   heading: {
-    fontSize: "50px",
+    fontSize: {
+      xs: "44px",
+      sm: "50px",
+    },
     color: "#212121",
     fontFamily: "'Fraunces', serif",
-    fontWeight: "500",
+    fontWeight: "600",
     lineHeight: "1.1",
-    letterSpacing: "-0.01em",
+    letterSpacing: "-0.5px",
     display: "inline",
   },
   subHeading: {
@@ -43,16 +65,29 @@ const styles = {
     fontFamily: "'Arimo', sans-serif",
   },
   featureList: {
-    width: "calc(100% - 500px)",
+    width: {
+      xs: "100%",
+      md: "calc(100% - 412px)",
+    },
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
+    marginTop: {
+      xs: "75px",
+      md: "0px",
+    },
   },
   featureItem: {
     display: "flex",
     flexDirection: "column",
-    width: "calc(50% - 50px)",
-    marginLeft: "50px",
+    width: {
+      xs: "100%",
+      sm: "calc(50% - 50px)"
+    },
+    marginLeft: {
+      xs: "0",
+      md: "50px",
+    },
     marginBottom: "45px",
   },
 };
@@ -91,7 +126,10 @@ function FeatureArea() {
           <Container sx={styles.container}>
             <Box
               sx={{
-                width: "428px",
+                width: {
+                  xs: "100%",
+                  md: "376px",
+                },
               }}
             >
               <Typography sx={styles.heading}>
@@ -99,7 +137,10 @@ function FeatureArea() {
                 <Typography
                   sx={{
                     display: "inline",
-                    fontSize: "50px",
+                    fontSize: {
+                      xs: "44px",
+                      sm: "50px",
+                    },
                     color: "#FC6B75",
                     fontFamily: "'Fraunces', serif",
                     position: "relative",
@@ -118,7 +159,7 @@ function FeatureArea() {
                 >
                   benefits
                 </Typography>
-                <br></br>that are unique only to us
+                &nbsp;that are unique only to us
               </Typography>
               <Typography sx={styles.subHeading}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -183,6 +224,10 @@ function FeatureArea() {
               position: "absolute",
               bottom: "0",
               left: "0",
+              display: {
+                xs: "none",
+                md: "block",
+              },
             }}
             alt="Paella dish"
           ></CardMedia>

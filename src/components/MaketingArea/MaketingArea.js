@@ -12,7 +12,7 @@ const styles = {
     maxWidth: {
       xs: "696px",
       sm: "720px",
-      md: "1176px",
+      md: "900px",
     },
   },
   title: {
@@ -22,7 +22,7 @@ const styles = {
     fontSize: {
       xs: "48px !important",
       sm: "48px !important",
-      md: "80px !important",
+      md: "58px !important",
     },
     color: "#fff",
     fontFamily: "'Fraunces', serif",
@@ -32,17 +32,18 @@ const styles = {
       sm: "72px",
       md: "78px",
     },
+    letterSpacing: "-0.58px"
   },
   subTitle: {
     textAlign: "center",
     fontSize: "20px",
     color: "#fff",
     lineHeight: {
-      md: "78px",
+      md: "30px",
       xs: "30px",
     },
     fontFamily: "'Arimo', sans-serif",
-    marginBottom: "16px",
+    marginBottom: "24px",
   },
   buttonContained: {
     display: "flex",
@@ -146,7 +147,7 @@ function MaketingArea() {
                 fontSize: {
                   xs: "48px !important",
                   sm: "48px !important",
-                  md: "80px !important",
+                  md: "58px !important",
                 },
                 color: "#FC6B75",
                 fontFamily: "'Fraunces', serif",
@@ -165,7 +166,7 @@ function MaketingArea() {
                   bottom: {
                     xs: "10px",
                     sm:"17px",
-                    md: "6px"
+                    md: "14px"
                   },
                 },
               }}

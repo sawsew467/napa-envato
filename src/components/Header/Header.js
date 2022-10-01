@@ -43,7 +43,7 @@ const styles = {
     },
     flexDirection: "row",
     alignItems: "center",
-    gap: "40px",
+    gap: "22px",
   },
   listItem: {
     padding: "0",
@@ -52,7 +52,7 @@ const styles = {
     alignItems: "center",
     fontSize: "16px",
     color: "#fff",
-    gap: "3px",
+    gap: "5px",
     height: "104px",
     cursor: "pointer",
     transition: "color 0.3s",
@@ -130,7 +130,7 @@ const styles = {
 };
 
 function Header() {
-  const list = ["Home", "Pages", "Porfolio", "Blog", "Contact"];
+  const list = ["Home", "Pages", "Porfolio", "Blog"];
   return (
     <>
       <AppBar sx={styles.appBar}>
@@ -156,6 +156,9 @@ function Header() {
                 ></KeyboardArrowDownIcon>
               </ListItem>
             ))}
+            <ListItem sx={styles.listItem}>
+              <Typography sx={styles.Typography}>Contact</Typography>
+            </ListItem>
           </List>
           <Box
             sx={{
