@@ -1,4 +1,4 @@
-import { Container, Link, Typography } from "@mui/material";
+import { Card, Container, Link, Typography } from "@mui/material";
 import SettingSvg from "../../assets/solutionArea/setting.svg";
 import LinkSvg from "../../assets/solutionArea/link1.svg";
 import ChatSvg from "../../assets/solutionArea/chat.svg";
@@ -129,7 +129,7 @@ function SolutionArea() {
         </Typography>
         <Container style={styles.container}>
           {solutionList.map((solution, index) => (
-            <Box key={index} style={styles.solutionItem}>
+            <Card key={index} style={styles.solutionItem}>
               <Box
                 sx={{
                   height: "60px",
@@ -150,7 +150,7 @@ function SolutionArea() {
               <Link sx={styles.link} color="inherit">
                 Read more
               </Link>
-            </Box>
+            </Card>
           ))}
         </Container>
       </Box>

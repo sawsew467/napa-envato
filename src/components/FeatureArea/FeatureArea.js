@@ -136,7 +136,9 @@ function FeatureArea() {
                 >
                   <CardMedia
                     component="img"
-                    image={require("../../assets/featureArea/"+ feature.img+ ".png")}
+                    image={require("../../assets/featureArea/" +
+                      feature.img +
+                      ".png")}
                     style={{
                       width: "fit-content",
                     }}
