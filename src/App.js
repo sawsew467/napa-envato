@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import ClientLogoArea from "./components/ClientLogoArea/ClientLogoArea";
+import ExperienceArea from "./components/ExperienceArea/ExperienceArea";
+import FeatureArea from "./components/FeatureArea/FeatureArea";
+import Header from "./components/Header/Header";
+import MaketingArea from "./components/MaketingArea/MaketingArea";
+import MarketingTestimonialArea from "./components/MarketingTestimonialArea/MarketingTestimonialArea";
+import RateArea from "./components/RateArea/RateArea";
+import SolutionArea from "./components/SolutionArea/SolutionArea";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Header></Header>
+        <MaketingArea></MaketingArea>
+        <ClientLogoArea></ClientLogoArea>
+        <SolutionArea></SolutionArea>
+        <MarketingTestimonialArea></MarketingTestimonialArea>
+        <RateArea></RateArea>
+        <ExperienceArea></ExperienceArea>
+        <FeatureArea></FeatureArea>
+    </>
   );
 }
 
