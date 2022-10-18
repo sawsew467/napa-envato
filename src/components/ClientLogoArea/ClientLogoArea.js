@@ -3,9 +3,12 @@ import React from "react";
 
 const styles = {
   containerFluid: {
-    padding: "140px 0",
+    padding: {
+      xs: "70px 0",
+      sm: "140px 0"
+    },
     backgroundColor: "#F4F4F4",
-    height: "154px",
+    // height: "154px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
@@ -14,78 +17,88 @@ const styles = {
     fontSize: "25px",
     textAlign: "center",
     fontFamily: "'Arimo', sans-serif",
+    marginBottom: "70px"
   },
   clientContainer: {
     display: "flex",
+    flexWrap: "wrap",
     flexDirection: "row",
+    rowGap: "15px",
     justifyContent: "space-around",
-    width: "1176px",
+    width: {
+      sm: "696px",
+      md: "1176px",
+    },
     margin: "0 auto",
   },
   clientItem: {
-    width: "25%",
+    width: {
+      xs: "50%",
+      sm: "25%",
+      md: "20%",
+    },
     display: "flex",
     justifyContent: "center",
-  }
+  },
 };
 
 function ClientLogoArea() {
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
-        <Typography className="sub-title" style={styles.subTitle}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
+        <Typography className="sub-title" sx={styles.subTitle}>
           We take care of more than 100k customers
         </Typography>
-        <Box className="client-container" style={styles.clientContainer}>
-          <Box className="client-item" style={styles.clientItem}>
+        <Box className="client-container" sx={styles.clientContainer}>
+          <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
               image={require("../../assets/clientLogoArea/1.png")}
-              style={{
+              sx={{
                 objectFit: "none",
                 width: "auto",
               }}
               alt="Paella dish"
             />
           </Box>
-          <Box className="client-item" style={styles.clientItem}>
+          <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
               image={require("../../assets/clientLogoArea/2.png")}
-              style={{
+              sx={{
                 objectFit: "none",
                 width: "auto",
               }}
               alt="Paella dish"
             />
           </Box>
-          <Box className="client-item" style={styles.clientItem}>
+          <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
               image={require("../../assets/clientLogoArea/3.png")}
-              style={{
+              sx={{
                 objectFit: "none",
                 width: "auto",
               }}
               alt="Paella dish"
             />
           </Box>
-          <Box className="client-item" style={styles.clientItem}>
+          <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
               image={require("../../assets/clientLogoArea/5.png")}
-              style={{
+              sx={{
                 objectFit: "none",
                 width: "auto",
               }}
               alt="Paella dish"
             />
           </Box>
-          <Box className="client-item" style={styles.clientItem}>
+          <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
               image={require("../../assets/clientLogoArea/6.png")}
-              style={{
+              sx={{
                 objectFit: "none",
                 width: "auto",
               }}

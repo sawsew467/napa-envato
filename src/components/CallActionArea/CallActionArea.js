@@ -70,20 +70,20 @@ const styles = {
 function CallActionArea() {
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
         <CardMedia
           component="img"
           image={require("../../assets/callActionArea/zigzag_two.png")}
-          style={styles.backgroundImg}
+          sx={styles.backgroundImg}
           alt="Paella dish"
         ></CardMedia>
-        <Container style={styles.container}>
+        <Container sx={styles.container}>
           <Typography
             sx={styles.heading}
           >
             Never miss an update
             <div
-              style={{
+              sx={{
                 position: "absolute",
                 right: "-48px",
                 top: "-36px",

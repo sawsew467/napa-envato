@@ -218,34 +218,34 @@ function Footer() {
             >
               <Link sx={styles.iconItem}>
                 <i
-                  style={{
+                  sx={{
                     fontSize: "20px",
                   }}
-                  class="fa-brands fa-instagram"
+                  className="fa-brands fa-instagram"
                 ></i>
               </Link>
               <Link sx={styles.iconItem}>
                 <i
-                  style={{
+                  sx={{
                     fontSize: "20px",
                   }}
-                  class="fa-brands fa-dribbble"
+                  className="fa-brands fa-dribbble"
                 ></i>
               </Link>
               <Link sx={styles.iconItem}>
                 <i
-                  style={{
+                  sx={{
                     fontSize: "20px",
                   }}
-                  class="fa-brands fa-behance"
+                  className="fa-brands fa-behance"
                 ></i>
               </Link>
               <Link sx={styles.iconItem}>
                 <i
-                  style={{
+                  sx={{
                     fontSize: "20px",
                   }}
-                  class="fa-brands fa-spotify"
+                  className="fa-brands fa-spotify"
                 ></i>
               </Link>
             </Box>

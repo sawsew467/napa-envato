@@ -68,11 +68,11 @@ const styles = {
 function ExperienceArea() {
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
         <CardMedia
           component="img"
           image={require("../../assets/experienceArea/bell.png")}
-          style={{
+          sx={{
             width: "auto",
             position: "absolute",
             right: "40px",
@@ -81,11 +81,11 @@ function ExperienceArea() {
           }}
           alt="Paella dish"
         ></CardMedia>
-        <Container style={styles.container}>
+        <Container sx={styles.container}>
           <CardMedia
             component="img"
             image={require("../../assets/experienceArea/dash_board.png")}
-            style={{
+            sx={{
               width: "auto",
               position: "absolute",
               left: "-38px",
@@ -97,7 +97,7 @@ function ExperienceArea() {
           <CardMedia
             component="img"
             image={require("../../assets/experienceArea/mobile.png")}
-            style={{
+            sx={{
               width: "auto",
               position: "absolute",
               left: "462px",
@@ -106,18 +106,18 @@ function ExperienceArea() {
             }}
             alt="Paella dish"
           ></CardMedia>
-          <Box className="ex-app-img" style={styles.exAppImg}>
+          <Box className="ex-app-img" sx={styles.exAppImg}>
             <CardMedia
               component="img"
               image={require("../../assets/experienceArea/zigzag-three.png")}
-              style={{
+              sx={{
                 width: "auto",
                 position: "absolute",
                 bottom: "-155px",
               }}
               alt="Paella dish"
             ></CardMedia>
-            <Box className="round-sharp" style={styles.roundSharp}>
+            <Box className="round-sharp" sx={styles.roundSharp}>
               <CardMedia
                 component="img"
                 image={require("../../assets/experienceArea/app_bg.png")}
@@ -125,7 +125,7 @@ function ExperienceArea() {
               ></CardMedia>
             </Box>
           </Box>
-          <Box className="content" style={styles.content}>
+          <Box className="content" sx={styles.content}>
             <Typography sx={styles.heading}>
               We deliver the <br></br> better&nbsp;
               <Typography

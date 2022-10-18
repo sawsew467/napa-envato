@@ -20,12 +20,12 @@ function App() {
       <SolutionArea></SolutionArea>
       <MarketingTestimonialArea></MarketingTestimonialArea>
       <RateArea></RateArea>
-      <ExperienceArea></ExperienceArea>
-      <FeatureArea></FeatureArea>
-      <PriceArea></PriceArea>
-      <FunFactArea></FunFactArea>
-      <CallActionArea></CallActionArea>
-      <Footer></Footer>
+      {/* <ExperienceArea></ExperienceArea> */}
+      {/* <FeatureArea></FeatureArea> */}
+      {/* <PriceArea></PriceArea> */}
+      {/* <FunFactArea></FunFactArea> */}
+      {/* <CallActionArea></CallActionArea> */}
+      {/* <Footer></Footer> */}
     </>
   );
 }

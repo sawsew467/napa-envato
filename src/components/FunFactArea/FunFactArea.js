@@ -58,10 +58,10 @@ function FunFactArea() {
   ];
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
-        <Container style={styles.container}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
+        <Container sx={styles.container}>
           {facts.map((fact, index) => (
-            <Card style={styles.card} key={index}>
+            <Card sx={styles.card} key={index}>
               <Typography sx={styles.title}>{fact.title}</Typography>
               {fact.subTitle}
             </Card>

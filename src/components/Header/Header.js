@@ -1,12 +1,14 @@
 import {
   AppBar,
   CardMedia,
+  IconButton,
   Link,
   List,
   ListItem,
   Toolbar,
   Typography,
 } from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
 import { Box } from "@mui/system";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
@@ -23,7 +25,11 @@ const styles = {
     boxShadow: "none",
   },
   toolbar: {
-    padding: "0 60px",
+    padding: {
+      xs: "0 15px !important",
+      sm: "0 60px !important",
+      md: "0 60px !important",
+    },
     height: "104px",
     display: "flex",
     flexDirection: "row",
@@ -31,7 +37,10 @@ const styles = {
     alignItems: "center",
   },
   list: {
-    display: "flex",
+    display: {
+      xs: "none",
+      md: "flex",
+    },
     flexDirection: "row",
     alignItems: "center",
     gap: "40px",
@@ -56,6 +65,11 @@ const styles = {
     position: "relative",
   },
   buttonText: {
+    display: {
+      xs: "none",
+      sm: "block",
+      md: "block",
+    },
     fontSize: "18px",
     lineHeight: "1.5",
     color: "#fff",
@@ -68,11 +82,17 @@ const styles = {
     },
   },
   buttonOutline: {
-    fontSize: "18px",
+    fontSize: {
+      xs: "16px",
+      md: "18px",
+    },
     lineHeight: "1.5",
     color: "#fff",
     textDecoration: "none",
-    padding: "13px 33px",
+    padding: {
+      xs: "5px 18px",
+      md: "13px 33px",
+    },
     border: "1px solid #fff",
     borderRadius: "3px",
     marginLeft: "24px",
@@ -92,48 +112,72 @@ const styles = {
     width: "14px",
     height: "14px",
   },
+  iconMenu: {
+    display: {
+      xs: "block",
+      md: "none",
+    },
+    // marginLeft: "24px",
+    marginLeft: "12px",
+    margin: {
+      xs: "0",
+      sm: "12px",
+    },
+    padding: {
+      xs: "6px",
+    },
+  },
 };
 
 function Header() {
   const list = ["Home", "Pages", "Porfolio", "Blog", "Contact"];
   return (
     <>
-      <AppBar style={styles.appBar}>
-        <Toolbar style={styles.toolbar}>
+      <AppBar sx={styles.appBar}>
+        <Toolbar sx={styles.toolbar}>
           <CardMedia
             component="img"
-            style={{
-              width: "145px",
+            sx={{
+              maxWidth: {
+                xs: "145px",
+                sm: "145px",
+                md: "145px",
+              },
             }}
             image={require("../../assets/logo_4.png")}
             alt="Paella dish"
           />
-          <List style={styles.list}>
-            {list.map((listItem) => (
-              <ListItem style={styles.listItem}>
-                <Typography style={styles.Typography}>{listItem}</Typography>
+          <List sx={styles.list}>
+            {list.map((listItem, index) => (
+              <ListItem key={index} sx={styles.listItem}>
+                <Typography sx={styles.Typography}>{listItem}</Typography>
                 <KeyboardArrowDownIcon
-                  style={styles.KeyboardArrowDownIcon}
+                  sx={styles.KeyboardArrowDownIcon}
                 ></KeyboardArrowDownIcon>
               </ListItem>
             ))}
           </List>
           <Box
-            style={{
+            sx={{
               display: "flex",
               alignItems: "center",
             }}
           >
-            <Link style={styles.buttonText} variant="text" color="inherit">
+            <Link sx={styles.buttonText} variant="text" color="inherit">
               Login
             </Link>
-            <Link
-              style={styles.buttonOutline}
-              variant="outlined"
-              color="inherit"
-            >
+            <Link sx={styles.buttonOutline} variant="outlined" color="inherit">
               Sign up
             </Link>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={styles.iconMenu}
+            >
+              <MenuIcon />
+            </IconButton>
           </Box>
         </Toolbar>
       </AppBar>

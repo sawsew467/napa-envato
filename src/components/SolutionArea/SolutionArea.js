@@ -15,34 +15,63 @@ const styles = {
     paddingBottom: "120px",
   },
   heading: {
-    width: "900px",
+    width: {
+      xs: "366px",
+      sm: "696px",
+      md: "1176px",
+    },
     margin: "0 auto",
     display: "inline",
-    fontSize: "60px",
+    fontSize: {
+      xs: "38px",
+      sm: "58px",
+      md: "60px",
+    },
     fontWeight: "500",
     color: "#212121",
     fontFamily: "'Fraunces', serif",
     textAlign: "center",
-    lineHeight: "78px",
+    lineHeight: {
+      xs: "45.6px", 
+      sm: "78px"
+    },
+    // letterSpacing: "-0.01em"
   },
   subHeading: {
     fontSize: "18px",
+    lineHeight: "30px",
     color: "#000",
-    lineHeight: "78px",
+    lineHeight: {
+      xs: "45.6px", 
+      sm: "78px"
+    },
     marginBottom: "48px",
     fontFamily: "'Arimo', sans-serif",
+    textAlign: "center",
   },
   container: {
-    width: "1176px",
+    width: {
+      xs: "366px",
+      sm: "696px",
+      md: "1176px",
+    },
+    // width: "1176px",
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
-    gap: "24px",
-    padding: "0",
+    columnGap: "24px",
+    rowGap: "30px",
+    padding: "0 !important",
   },
   solutionItem: {
-    width: "calc(50% - 76px)",
-    padding: "32px",
+    width: {
+      xs: "100%",
+      md: "calc(50% - 76px)",
+    },
+    padding: {
+      xs: "22px 15px",
+      sm: "32px",
+    },
     display: "flex",
     flexDirection: "column",
     backgroundColor: "#fff",
@@ -51,10 +80,15 @@ const styles = {
     position: "relative",
   },
   title: {
-    fontSize: "24px",
+    fontSize: {
+      xs: "24px",
+      sm: "24px",
+    },
     fontWeight: "600",
     color: "#212121",
     fontFamily: "'Arimo', sans-serif",
+    marginBottom: "8px",
+    lineHeight: "1.2",
   },
   subTitle: {
     lineHeight: "30px",
@@ -97,18 +131,25 @@ function SolutionArea() {
   ];
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
-        <Typography style={styles.heading}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
+        <Typography sx={styles.heading}>
           Singular&nbsp;
           <Typography
             sx={{
               display: "inline",
-              fontSize: "60px",
+              fontSize: {
+                xs: "38px",
+                sm: "58px",
+                md: "60px",
+              },
               fontWeight: "500",
               color: "#FC6B75",
               fontFamily: "'Fraunces', serif",
               position: "relative",
-              lineHeight: "78px",
+              lineHeight: {
+                xs: "45.6px", 
+                sm: "78px"
+              },
               marginBottom: "20px",
               "&::before": {
                 content: '""',
@@ -122,14 +163,14 @@ function SolutionArea() {
           >
             solution
           </Typography>
-          &nbsp;to all <br></br> of your activities
+          &nbsp;to all of your activities
         </Typography>
         <Typography sx={styles.subHeading}>
           You said I'd feel better if I just worked hard without lifting me up
         </Typography>
-        <Container style={styles.container}>
+        <Container sx={styles.container}>
           {solutionList.map((solution, index) => (
-            <Card key={index} style={styles.solutionItem}>
+            <Card key={index} sx={styles.solutionItem}>
               <Box
                 sx={{
                   height: "60px",
@@ -140,7 +181,7 @@ function SolutionArea() {
               >
                 <img
                   src={solution.icon}
-                  style={{
+                  sx={{
                     objectFit: "contain",
                   }}
                 ></img>

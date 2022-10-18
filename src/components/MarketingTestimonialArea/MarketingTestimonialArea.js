@@ -4,12 +4,20 @@ import React from "react";
 const styles = {
   containerFluid: {
     backgroundColor: "#212121",
-    padding: "100px 0",
+    padding: {
+      xs: "100px 0 0 0",
+      md: "100px 0"
+    },
+    overflow: "hidden",
   },
   container: {
-    width: "1176px",
+    width: {
+      xs: "366px",
+      sm: "696px",
+      md: "1176px",
+    },
     margin: "0 auto",
-    padding: "0",
+    padding: "0 !important",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -17,21 +25,31 @@ const styles = {
   },
   row: {
     display: "flex",
+    flexDirection: {
+      xs: "column",
+      md: "row",
+    },
     justifyContent: "space-between",
-    alignItems: "center",
+    alignItems: {
+      xs: "flex-start",
+      md: "center",
+    },
   },
 };
 
 function MarketingTestimonialArea() {
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
-        <Container style={styles.container}>
-          <Grid container className="row" style={styles.row}>
-            <Grid item xs={6}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
+        <Container sx={styles.container}>
+          <Grid container={true} className="row" sx={styles.row}>
+            <Grid item={true} md={6} xs={12}>
               <Typography
                 sx={{
-                  fontSize: "60px",
+                  fontSize: {
+                    sm: "58px",
+                    md: "60px",
+                  },
                   color: "#fff",
                   fontFamily: "'Fraunces', serif",
                   lineHeight: "64px",
@@ -40,7 +58,10 @@ function MarketingTestimonialArea() {
                 Happy customer
                 <Typography
                   sx={{
-                    fontSize: "60px",
+                    fontSize: {
+                      sm: "58px",
+                      md: "60px",
+                    },
                     color: "#FF824C",
                     fontFamily: "'Fraunces', serif",
                     lineHeight: "78px",
@@ -84,12 +105,27 @@ function MarketingTestimonialArea() {
                 </Typography>
               </Typography>
             </Grid>
-            <Grid item >
+            <Grid
+              item={true}
+              sx={{
+                width: {
+                  xs: "100%",
+                  md: "auto",
+                },
+              }}
+            >
               <Box
                 sx={{
+                  marginTop: {
+                    xs: "130px",
+                    md: "0",
+                  },
                   position: "relative",
                   zIndex: "0",
-                  width: "461px",
+                  width: {
+                    sm: "516px",
+                    md: "461px",
+                  },
                   display: "flex",
                   justifyContent: "center",
                 }}

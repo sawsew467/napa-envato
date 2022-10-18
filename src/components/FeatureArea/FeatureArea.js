@@ -20,7 +20,7 @@ const styles = {
   container: {
     width: "1180px",
     margin: "0 auto",
-    padding: "0",
+    padding: "0 !important",
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
@@ -86,9 +86,9 @@ function FeatureArea() {
   ];
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
-        <Box style={styles.board}>
-          <Container style={styles.container}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
+        <Box sx={styles.board}>
+          <Container sx={styles.container}>
             <Box
               sx={{
                 width: "428px",
@@ -126,20 +126,21 @@ function FeatureArea() {
                 text .
               </Typography>
             </Box>
-            <Box container className="feature-list" style={styles.featureList}>
-              {features.map((feature) => (
+            <Box container className="feature-list" sx={styles.featureList}>
+              {features.map((feature, index) => (
                 <Box
                   item
+                  key={index}
                   xs={6}
                   className="feature-item"
-                  style={styles.featureItem}
+                  sx={styles.featureItem}
                 >
                   <CardMedia
                     component="img"
                     image={require("../../assets/featureArea/" +
                       feature.img +
                       ".png")}
-                    style={{
+                    sx={{
                       width: "fit-content",
                     }}
                     alt="Paella dish"
@@ -165,7 +166,7 @@ function FeatureArea() {
                     typesetting.
                   </Typography>
                   <ArrowForwardIcon
-                    style={{
+                    sx={{
                       width: "20px",
                       height: "20px",
                     }}
@@ -177,7 +178,7 @@ function FeatureArea() {
           <CardMedia
             component="img"
             image={require("../../assets/featureArea/success_img.png")}
-            style={{
+            sx={{
               width: "auto",
               position: "absolute",
               bottom: "0",
@@ -188,7 +189,7 @@ function FeatureArea() {
           <CardMedia
             component="img"
             image={require("../../assets/featureArea/leaf_bottom.png")}
-            style={{
+            sx={{
               width: "auto",
               position: "absolute",
               bottom: "0",
@@ -199,7 +200,7 @@ function FeatureArea() {
           <CardMedia
             component="img"
             image={require("../../assets/featureArea/leaf_top.png")}
-            style={{
+            sx={{
               width: "auto",
               position: "absolute",
               top: "0",
@@ -210,7 +211,7 @@ function FeatureArea() {
           <CardMedia
             component="img"
             image={require("../../assets/featureArea/dot.png")}
-            style={{
+            sx={{
               width: "auto",
               position: "absolute",
               bottom: "125px",

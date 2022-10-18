@@ -115,7 +115,7 @@ const styles = {
 function PriceArea() {
   return (
     <>
-      <Box className="container-fluid" style={styles.containerFluid}>
+      <Box className="container-fluid" sx={styles.containerFluid}>
         <Typography sx={styles.heading}>
           We are&nbsp;
           <Typography
@@ -147,7 +147,7 @@ function PriceArea() {
         <Typography sx={styles.subHeading}>
           You said I'd feel better if I just worked hard without lifting me up
         </Typography>
-        <Box className="table" style={styles.table}>
+        <Box className="table" sx={styles.table}>
           <Box
             sx={{
               display: "flex",
