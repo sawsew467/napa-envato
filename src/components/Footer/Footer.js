@@ -21,7 +21,11 @@ function Footer() {
     <>
       <Box
         sx={{
-          paddingTop: "120px",
+          paddingTop: {
+            xs: "70px",
+            sm: "120px",
+          },
+          paddingBottom: "20px",
           paddingLeft: {},
           paddingRight: {},
           backgroundColor: "#212121",
@@ -32,7 +36,7 @@ function Footer() {
             width: {
               xs: "366px",
               sm: "696px",
-              md: "936px",
+              md: "1176px",
             },
             display: "flex",
             flexDirection: "row",
@@ -44,7 +48,8 @@ function Footer() {
             sx={{
               width: {
                 xs: "100%",
-                sm: "50%"
+                sm: "50%",
+                md: "calc(100% / 3)",
               },
             }}
           >
@@ -102,10 +107,15 @@ function Footer() {
             sx={{
               width: {
                 xs: "100%",
-                sm: "50%"
+                sm: "50%",
+                md: "25%",
               },
               display: "flex",
               flexDirection: "column",
+              marginTop: {
+                xs: "30px",
+                sm: "0",
+              },
             }}
           >
             <Typography
@@ -138,10 +148,15 @@ function Footer() {
             sx={{
               width: {
                 xs: "100%",
-                sm: "50%"
+                sm: "50%",
+                md: "25%",
               },
               display: "flex",
               flexDirection: "column",
+              marginTop: {
+                xs: "30px",
+                sm: "0",
+              },
             }}
           >
             <Typography
@@ -174,10 +189,15 @@ function Footer() {
             sx={{
               width: {
                 xs: "100%",
-                sm: "50%"
+                sm: "50%",
+                md: "calc(100% / 6)",
               },
               display: "flex",
               flexDirection: "column",
+              marginTop: {
+                xs: "30px",
+                sm: "0",
+              },
             }}
           >
             <Typography
@@ -212,9 +232,22 @@ function Footer() {
           <Box
             sx={{
               display: "flex",
+              flexDirection: {
+                xs: "column",
+                sm: "row",
+              },
               justifyContent: "space-between",
-              paddingTop: "170px",
+              alignItems: {
+                xs: "center",
+                sm: "flex-start",
+              },
+              paddingTop: {
+                xs: "30px",
+                sm: "80px",
+                md:"170px"
+              },
               width: "100%",
+              lineHeight: "36px",
             }}
           >
             <Typography

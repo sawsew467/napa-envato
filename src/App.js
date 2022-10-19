@@ -22,10 +22,10 @@ function App() {
       <RateArea></RateArea>
       <ExperienceArea></ExperienceArea>
       <FeatureArea></FeatureArea>
-      {/* <PriceArea></PriceArea> */}
+      <PriceArea></PriceArea>
       <FunFactArea></FunFactArea>
       <CallActionArea></CallActionArea>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </>
   );
 }

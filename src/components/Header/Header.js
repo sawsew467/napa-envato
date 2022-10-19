@@ -44,6 +44,9 @@ const styles = {
     flexDirection: "row",
     alignItems: "center",
     gap: "22px",
+    "& > :nth-child(1)": {
+      color: "#FF824C",
+    },
   },
   listItem: {
     padding: "0",
