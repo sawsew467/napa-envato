@@ -5,13 +5,14 @@ const styles = {
   containerFluid: {
     padding: {
       xs: "80px 0",
-      sm: "140px 0"
+      sm: "140px 0",
     },
     backgroundColor: "#F4F4F4",
     // height: "154px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",
+    position: "relative",
   },
   subTitle: {
     fontSize: "25px",
@@ -19,7 +20,7 @@ const styles = {
     color: "#2C2C2C",
     textAlign: "center",
     fontFamily: "'Arimo', sans-serif",
-    marginBottom: "70px"
+    marginBottom: "70px",
   },
   clientContainer: {
     display: "flex",
@@ -29,7 +30,7 @@ const styles = {
     justifyContent: "space-around",
     width: {
       sm: "696px",
-      md: "936px",
+      md: "1176px",
     },
     margin: "0 auto",
   },
@@ -48,6 +49,24 @@ function ClientLogoArea() {
   return (
     <>
       <Box className="container-fluid" sx={styles.containerFluid}>
+        <CardMedia
+          component="img"
+          image={require("../../assets/clientLogoArea/star.png")}
+          sx={{
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            left: {
+              md: "120px"
+            },
+            top: {
+              xs: "220px",
+              sm: "210px",
+              md: "152px"
+            },
+          }}
+          alt="Paella dish"
+        />
         <Typography className="sub-title" sx={styles.subTitle}>
           We take care of more than 100k customers
         </Typography>
@@ -88,7 +107,7 @@ function ClientLogoArea() {
           <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
-              image={require("../../assets/clientLogoArea/5.png")}
+              image={require("../../assets/clientLogoArea/6.png")}
               sx={{
                 objectFit: "none",
                 width: "auto",
@@ -99,7 +118,7 @@ function ClientLogoArea() {
           <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
-              image={require("../../assets/clientLogoArea/6.png")}
+              image={require("../../assets/clientLogoArea/5.png")}
               sx={{
                 objectFit: "none",
                 width: "auto",

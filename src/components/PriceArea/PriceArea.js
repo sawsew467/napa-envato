@@ -29,7 +29,7 @@ const styles = {
     textAlign: "center",
     lineHeight: {
       xs: "1.2",
-      md: "78px"
+      md: "78px",
     },
     fontWeight: "500",
     letterSpacing: "-0.01em",
@@ -62,7 +62,7 @@ function PriceArea() {
               position: "relative",
               lineHeight: {
                 xs: "38px",
-                md: "78px"
+                md: "78px",
               },
               marginBottom: "20px",
               fontWeight: "500",

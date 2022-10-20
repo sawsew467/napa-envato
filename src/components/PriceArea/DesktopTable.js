@@ -1,4 +1,4 @@
-import { Box, Link, Typography } from "@mui/material";
+import { Box, CardMedia, Link, Typography } from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import React from "react";
@@ -11,8 +11,8 @@ const styles = {
     borderRadius: "6px",
     border: "1px solid #dcdcdc",
     display: {
-        xs: "none",
-        sm: "flex"
+      xs: "none",
+      sm: "flex",
     },
     flexDirection: "column",
     width: {
@@ -20,6 +20,7 @@ const styles = {
       sm: "696px",
       md: "1176px",
     },
+    position: "relative",
   },
   tbHead: {
     paddingTop: "30px",
@@ -98,6 +99,17 @@ function DesktopTable() {
   return (
     <>
       <Box className="table" sx={styles.table}>
+        <CardMedia
+          component="img"
+          image={require("../../assets/priceArea/price_bg_shap.png")}
+          sx={{
+            width: "auto",
+            position: "absolute",
+            left: "-146px",
+            bottom: "0"
+          }}
+          alt="Paella dish"
+        ></CardMedia>
         <Box
           sx={{
             display: "flex",

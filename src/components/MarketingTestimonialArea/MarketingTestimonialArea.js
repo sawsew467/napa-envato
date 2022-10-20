@@ -1,14 +1,16 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, CardMedia, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 
 const styles = {
   containerFluid: {
     backgroundColor: "#212121",
     padding: {
-      xs: "100px 0 0 0",
+      xs: "80px 0 0 0",
+      sm: "100px 0 0 0",
       md: "100px 0",
     },
     overflow: "hidden",
+    position: "relative",
   },
   container: {
     width: {
@@ -42,30 +44,134 @@ function MarketingTestimonialArea() {
   return (
     <>
       <Box className="container-fluid" sx={styles.containerFluid}>
+        <CardMedia
+          component="img"
+          image={require("../../assets/marketingTestimonialArea/plus.png")}
+          sx={{
+            transform: {
+              xs: "rotate(37deg)",
+              sm: "none",
+            },
+            display: {
+              // xs: "none",
+              md: "block",
+            },
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            left: {
+              xs: "165px",
+              sm: "165px",
+              md: "167px",
+            },
+            top: {
+              xs: "219px",
+              sm: "219px",
+              md: "240px",
+            },
+          }}
+          alt="Paella dish"
+        />
+        <CardMedia
+          component="img"
+          image={require("../../assets/marketingTestimonialArea/line_angle.png")}
+          sx={{
+            display: {
+              xs: "none",
+              sm: "block",
+            },
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            left: {
+              xs: "",
+              sm: "138px",
+              md: "142px",
+            },
+            bottom: {
+              xs: "",
+              sm: "452px",
+              md: "124px",
+            },
+          }}
+          alt="Paella dish"
+        />
+        <CardMedia
+          component="img"
+          image={require("../../assets/marketingTestimonialArea/star.png")}
+          sx={{
+            display: {
+              // xs: "none",
+              md: "block",
+            },
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            right: {
+              xs: "172px",
+              sm: "172px",
+              md: "172px",
+            },
+            top: {
+              xs: "184px",
+              sm: "184px",
+              md: "184px",
+            },
+          }}
+          alt="Paella dish"
+        />
+        <CardMedia
+          component="img"
+          image={require("../../assets/marketingTestimonialArea/round.png")}
+          sx={{
+            display: {
+              xs: "none",
+              sm: "block",
+            },
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            right: {
+              xs: "146px",
+              sm: "146px",
+              md: "146px",
+            },
+            bottom: {
+              xs: "439px",
+              sm: "439px",
+              md: "86px",
+            },
+          }}
+          alt="Paella dish"
+        />
         <Container sx={styles.container}>
           <Grid container={true} className="row" sx={styles.row}>
             <Grid item={true} md={6} xs={12}>
               <Typography
                 sx={{
                   fontSize: {
+                    xs: "38px",
                     sm: "58px",
                     md: "58px",
                   },
                   color: "#fff",
                   fontFamily: "'Fraunces', serif",
-                  lineHeight: "64px",
+                  lineHeight: "1.2",
+                  fontWeight: "500",
                 }}
               >
                 Happy customer
                 <Typography
                   sx={{
                     fontSize: {
+                      xs: "38px",
                       sm: "58px",
                       md: "58px",
                     },
                     color: "#FF824C",
                     fontFamily: "'Fraunces', serif",
-                    lineHeight: "78px",
+                    lineHeight: "1.2",
+                    fontWeight: "500",
                   }}
                 >
                   testimonials
@@ -73,7 +179,10 @@ function MarketingTestimonialArea() {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "24px",
+                  fontSize: {
+                    xs: "18px",
+                    sm: "24px",
+                  },
                   fontWeight: "400",
                   color: "#fff",
                   marginTop: "40px",
@@ -111,7 +220,7 @@ function MarketingTestimonialArea() {
                 sx={{
                   display: "flex",
                   gap: "20px",
-                  marginTop: "30px"
+                  marginTop: "30px",
                 }}
               >
                 <div

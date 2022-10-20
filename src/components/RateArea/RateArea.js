@@ -7,13 +7,14 @@ const styles = {
     paddingTop: {
       xs: "80px",
       sm: "150px",
-      md: "50px"
+      md: "50px",
     },
     paddingBottom: {
       xs: "80px",
       md: "100px",
     },
     position: "relative",
+    zIndex: 1,
   },
   container: {
     width: {
@@ -34,7 +35,7 @@ const styles = {
       md: "row",
     },
     alignItems: "center",
-    zIndex: "1",
+    zIndex: "3",
     position: "relative",
   },
   rateList: {
@@ -147,6 +148,19 @@ function RateArea() {
             ))}
           </Box>
         </Container>
+        <CardMedia
+          component="img"
+          image={require("../../assets/clientLogoArea/zigzag.png")}
+          sx={{
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            right: "0",
+            bottom: "110px",
+            zIndex: 2
+          }}
+          alt="Paella dish"
+        />
       </Box>
     </>
   );

@@ -1,4 +1,4 @@
-import { Card, Container, Link, Typography } from "@mui/material";
+import { Card, CardMedia, Container, Link, Typography } from "@mui/material";
 import SettingSvg from "../../assets/solutionArea/setting.svg";
 import LinkSvg from "../../assets/solutionArea/link1.svg";
 import ChatSvg from "../../assets/solutionArea/chat.svg";
@@ -16,6 +16,7 @@ const styles = {
       xs: "110px",
       sm: "150px",
     },
+    position: "relative",
   },
   heading: {
     // width: {
@@ -25,7 +26,7 @@ const styles = {
     // },
     width: {
       xs: "100%",
-      sm: "650px"
+      sm: "650px",
     },
     margin: "0 auto",
     display: "inline",
@@ -112,34 +113,67 @@ function SolutionArea() {
       title: "CRM Software",
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
-      icon: SettingSvg,
+      icon: LinkSvg,
       sharp: "service_shap",
     },
     {
       title: "Marketing Automation",
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
-      icon: LinkSvg,
-      sharp: "service_shap",
+      icon: SettingSvg,
+      sharp: "service_shap_two",
     },
     {
       title: "Helpdesk Software",
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
       icon: ChatSvg,
-      sharp: "service_shap",
+      sharp: "service_shap_three",
     },
     {
       title: "Sales Software",
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
       icon: SoftwareSvg,
-      sharp: "service_shap",
+      sharp: "service_shap_four",
     },
   ];
   return (
     <>
       <Box className="container-fluid" sx={styles.containerFluid}>
+        <CardMedia
+          component="img"
+          image={require("../../assets/solutionArea/mic.png")}
+          sx={{
+            display: {
+              xs: "none",
+              md: "block",
+            },
+            transform: "rotate(40deg)",
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            left: "130px",
+            bottom: "212px",
+          }}
+          alt="Paella dish"
+        />
+        <CardMedia
+          component="img"
+          image={require("../../assets/solutionArea/cup.png")}
+          sx={{
+            display: {
+              xs: "none",
+              md: "block",
+            },
+            position: "absolute",
+            objectFit: "none",
+            width: "auto",
+            right: "140px",
+            top: "284px",
+          }}
+          alt="Paella dish"
+        />
         <Typography sx={styles.heading}>
           Singular&nbsp;
           <Typography
@@ -179,6 +213,20 @@ function SolutionArea() {
         <Container sx={styles.container}>
           {solutionList.map((solution, index) => (
             <Card key={index} sx={styles.solutionItem}>
+              <CardMedia
+                component="img"
+                image={require("../../assets/solutionArea/" +
+                  solution.sharp +
+                  ".png")}
+                sx={{
+                  position: "absolute",
+                  objectFit: "none",
+                  width: "auto",
+                  right: 0,
+                  top: 0,
+                }}
+                alt="Paella dish"
+              />
               <Box
                 sx={{
                   height: "60px",
