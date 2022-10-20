@@ -14,6 +14,7 @@ const styles = {
       md: "1200px",
     },
     padding: "0 12px !important",
+    position: "relative",
   },
   title: {
     maxWidth: "900px",
@@ -166,6 +167,28 @@ function MaketingArea() {
         sx={{ backgroundColor: "#212121", overflow: "hidden" }}
       >
         <Container sx={styles.container}>
+          <CardMedia
+            component="img"
+            sx={{
+              width: "auto",
+              position: "absolute",
+              left: "24px",
+              top: "170px",
+            }}
+            image={require("../../assets/maketingArea/start.png")}
+            alt="Paella dish"
+          />
+          <CardMedia
+            component="img"
+            sx={{
+              width: "auto",
+              position: "absolute",
+              right: "24px",
+              top: "200px",
+            }}
+            image={require("../../assets/maketingArea/flower.png")}
+            alt="Paella dish"
+          />
           <Typography sx={styles.title} className="title">
             Transform the way you think about&nbsp;
             <Typography

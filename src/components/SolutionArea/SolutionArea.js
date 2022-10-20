@@ -14,14 +14,18 @@ const styles = {
     alignItems: "center",
     paddingBottom: {
       xs: "110px",
-      sm:"150px"
+      sm: "150px",
     },
   },
   heading: {
+    // width: {
+    //   xs: "366px",
+    //   sm: "696px",
+    //   md: "936px",
+    // },
     width: {
-      xs: "366px",
-      sm: "696px",
-      md: "936px",
+      xs: "100%",
+      sm: "650px"
     },
     margin: "0 auto",
     display: "inline",
@@ -35,20 +39,20 @@ const styles = {
     fontFamily: "'Fraunces', serif",
     textAlign: "center",
     lineHeight: {
-      xs: "45.6px", 
-      sm: "1.2"
+      xs: "1.2",
+      sm: "1.2",
     },
   },
   subHeading: {
     fontSize: "18px",
     color: "#494949",
     lineHeight: {
-      xs: "45.6px", 
-      sm: "30px"
+      xs: "30px",
+      sm: "30px",
     },
     marginBottom: "75px",
     marginTop: {
-      md: "20px"
+      xs: "20px",
     },
     fontFamily: "'Arimo', sans-serif",
     textAlign: "center",
@@ -151,8 +155,8 @@ function SolutionArea() {
               fontFamily: "'Fraunces', serif",
               position: "relative",
               lineHeight: {
-                xs: "45.6px", 
-                sm: "1.2"
+                xs: "1.2",
+                sm: "1.2",
               },
               marginBottom: "20px",
               "&::before": {
