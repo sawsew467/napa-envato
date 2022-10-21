@@ -31,6 +31,7 @@ const styles = {
   },
   tbHead: {
     fontSize: "20px",
+    fontWeight: "500",
     textAlign: "center",
     padding: "20px 12px 20px 15px",
     color: "#212529",

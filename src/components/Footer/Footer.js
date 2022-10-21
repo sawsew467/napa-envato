@@ -42,6 +42,10 @@ function Footer() {
             flexDirection: "row",
             margin: "0 auto",
             flexWrap: "wrap",
+            paddingBottom: {
+              xs: "20px",
+              sm: "0",
+            },
           }}
         >
           <Box
@@ -244,7 +248,7 @@ function Footer() {
               paddingTop: {
                 xs: "30px",
                 sm: "80px",
-                md:"170px"
+                md: "170px",
               },
               width: "100%",
               lineHeight: "36px",

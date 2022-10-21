@@ -103,10 +103,13 @@ function DesktopTable() {
           component="img"
           image={require("../../assets/priceArea/price_bg_shap.png")}
           sx={{
-            width: "auto",
+            width: {
+              sm: "0",
+              md: "auto",
+            },
             position: "absolute",
             left: "-146px",
-            bottom: "0"
+            bottom: "0",
           }}
           alt="Paella dish"
         ></CardMedia>

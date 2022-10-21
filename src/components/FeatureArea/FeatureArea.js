@@ -12,7 +12,7 @@ const styles = {
     backgroundColor: "#f4f4f4",
   },
   board: {
-    maxWidth: "100%",
+    maxWidth: "1600px",
     paddingTop: {
       xs: "80px",
       md: "140px",
@@ -21,7 +21,7 @@ const styles = {
       sm: "50px",
       md: "100px",
     },
-    margin: "0",
+    margin: "0 auto",
     backgroundColor: "#eaecf1",
     borderRadius: "10px",
     position: "relative",

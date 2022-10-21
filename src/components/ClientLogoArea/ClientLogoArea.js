@@ -21,6 +21,7 @@ const styles = {
     textAlign: "center",
     fontFamily: "'Arimo', sans-serif",
     marginBottom: "70px",
+    fontWeight: "500"
   },
   clientContainer: {
     display: "flex",
