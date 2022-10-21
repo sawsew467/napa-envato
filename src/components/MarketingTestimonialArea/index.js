@@ -74,7 +74,7 @@ function MarketingTestimonialArea() {
         />
         <CardMedia
           component="img"
-          image={require("../../assets/marketingTestimonialArea/line_angle.png")}
+          image={require("../../assets/marketingTestimonialArea/line-angle.png")}
           sx={{
             display: {
               xs: "none",
@@ -307,7 +307,7 @@ function MarketingTestimonialArea() {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/marketingTestimonialArea/img_one.png")}
+                    src={require("../../assets/marketingTestimonialArea/img-one.png")}
                     style={{
                       zIndex: "1",
                       margin: "0",
@@ -321,7 +321,7 @@ function MarketingTestimonialArea() {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/marketingTestimonialArea/img_two.png")}
+                    src={require("../../assets/marketingTestimonialArea/img-two.png")}
                     style={{
                       zIndex: "1",
                       margin: "0",
@@ -335,7 +335,7 @@ function MarketingTestimonialArea() {
                 </div>
                 <div>
                   <img
-                    src={require("../../assets/marketingTestimonialArea/testimonial_img.png")}
+                    src={require("../../assets/marketingTestimonialArea/testimonial-img.png")}
                     style={{
                       zIndex: "1",
                       margin: "0",

@@ -133,7 +133,7 @@ function FeatureArea() {
                 },
               }}
             >
-              <Typography sx={styles.heading}>
+              <Typography component={'span'} variant={'body2'} sx={styles.heading}>
                 We offer&nbsp;
                 <Typography
                   sx={{
@@ -162,7 +162,7 @@ function FeatureArea() {
                 </Typography>
                 &nbsp;that are unique only to us
               </Typography>
-              <Typography sx={styles.subHeading}>
+              <Typography component={'span'} variant={'body2'} sx={styles.subHeading}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text .
@@ -219,7 +219,7 @@ function FeatureArea() {
           </Container>
           <CardMedia
             component="img"
-            image={require("../../assets/featureArea/success_img.png")}
+            image={require("../../assets/featureArea/success-img.png")}
             sx={{
               width: "auto",
               position: "absolute",
@@ -234,7 +234,7 @@ function FeatureArea() {
           ></CardMedia>
           <CardMedia
             component="img"
-            image={require("../../assets/featureArea/leaf_bottom.png")}
+            image={require("../../assets/featureArea/leaf-bottom.png")}
             sx={{
               width: "auto",
               position: "absolute",
@@ -245,7 +245,7 @@ function FeatureArea() {
           ></CardMedia>
           <CardMedia
             component="img"
-            image={require("../../assets/featureArea/leaf_top.png")}
+            image={require("../../assets/featureArea/leaf-top.png")}
             sx={{
               width: "auto",
               position: "absolute",

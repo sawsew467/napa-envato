@@ -189,7 +189,7 @@ function MaketingArea() {
             image={require("../../assets/maketingArea/flower.png")}
             alt="Paella dish"
           />
-          <Typography sx={styles.title} className="title">
+          <Typography component={'span'} variant={'body2'} sx={styles.title} className="title">
             Transform the way you think about&nbsp;
             <Typography
               sx={{
@@ -226,7 +226,7 @@ function MaketingArea() {
               marketing
             </Typography>
           </Typography>
-          <Typography sx={styles.subTitle} className="subTitle">
+          <Typography component={'span'} variant={'body2'} sx={styles.subTitle} className="subTitle">
             You said I'd feel better if I just worked hard without lifting my
             head up
           </Typography>
@@ -263,7 +263,7 @@ function MaketingArea() {
             <CardMedia
               component="img"
               sx={styles.dashBoard}
-              image={require("../../assets/maketingArea/dashbord_img.png")}
+              image={require("../../assets/maketingArea/dashbord-img.png")}
               alt="Paella dish"
             />
             <CardMedia

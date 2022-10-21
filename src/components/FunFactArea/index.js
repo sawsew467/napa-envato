@@ -81,7 +81,7 @@ function FunFactArea() {
         <Container sx={styles.container}>
           {facts.map((fact, index) => (
             <Card sx={styles.card} key={index}>
-              <Typography sx={styles.title}>{fact.title}</Typography>
+              <Typography component={'span'} variant={'body2'} sx={styles.title}>{fact.title}</Typography>
               {fact.subTitle}
             </Card>
           ))}

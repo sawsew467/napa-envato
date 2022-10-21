@@ -132,7 +132,7 @@ function ExperienceArea() {
         <Container sx={styles.container}>
           <CardMedia
             component="img"
-            image={require("../../assets/experienceArea/dash_board.png")}
+            image={require("../../assets/experienceArea/dash-board.png")}
             sx={{
               width: {
                 xs: "376px",
@@ -187,13 +187,13 @@ function ExperienceArea() {
             <Box className="round-sharp" sx={styles.roundSharp}>
               <CardMedia
                 component="img"
-                image={require("../../assets/experienceArea/app_bg.png")}
+                image={require("../../assets/experienceArea/app-bg.png")}
                 alt="Paella dish"
               ></CardMedia>
             </Box>
           </Box>
           <Box className="content" sx={styles.content}>
-            <Typography sx={styles.heading}>
+            <Typography component={'span'} variant={'body2'} sx={styles.heading}>
               We deliver the better&nbsp;
               <Typography
                 sx={{
@@ -223,7 +223,7 @@ function ExperienceArea() {
               </Typography>
               experiences .
             </Typography>
-            <Typography sx={styles.subHeading}>
+            <Typography component={'span'} variant={'body2'} sx={styles.subHeading}>
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry. Lorem Ipsum has.
             </Typography>

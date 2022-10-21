@@ -68,14 +68,14 @@ function ClientLogoArea() {
           }}
           alt="Paella dish"
         />
-        <Typography className="sub-title" sx={styles.subTitle}>
+        <Typography component={'span'} variant={'body2'} className="sub-title" sx={styles.subTitle}>
           We take care of more than 100k customers
         </Typography>
         <Box className="client-container" sx={styles.clientContainer}>
           <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
-              image={require("../../assets/clientLogoArea/1.png")}
+              image={require("../../assets/clientLogoArea/bravo.png")}
               sx={{
                 objectFit: "none",
                 width: "auto",
@@ -86,7 +86,7 @@ function ClientLogoArea() {
           <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
-              image={require("../../assets/clientLogoArea/2.png")}
+              image={require("../../assets/clientLogoArea/copixel.png")}
               sx={{
                 objectFit: "none",
                 width: "auto",
@@ -97,7 +97,7 @@ function ClientLogoArea() {
           <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
-              image={require("../../assets/clientLogoArea/3.png")}
+              image={require("../../assets/clientLogoArea/reverland.png")}
               sx={{
                 objectFit: "none",
                 width: "auto",
@@ -108,7 +108,7 @@ function ClientLogoArea() {
           <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
-              image={require("../../assets/clientLogoArea/6.png")}
+              image={require("../../assets/clientLogoArea/mechanic.png")}
               sx={{
                 objectFit: "none",
                 width: "auto",
@@ -119,7 +119,7 @@ function ClientLogoArea() {
           <Box className="client-item" sx={styles.clientItem}>
             <CardMedia
               component="img"
-              image={require("../../assets/clientLogoArea/5.png")}
+              image={require("../../assets/clientLogoArea/teakwood.png")}
               sx={{
                 objectFit: "none",
                 width: "auto",

@@ -228,7 +228,7 @@ function MobileTable() {
             <Box sx={styles.colLeft}>Other Agency #1</Box>
             <Box sx={{...styles.colRight, justifyContent: "end"}}>
               {/* <CloseIcon sx={styles.closeIcon}></CloseIcon> */}
-              <Typography sx={
+              <Typography component={'span'} variant={'body2'} sx={
                 {
                     fontSize: "25px",
                     fontWeight: "400",
@@ -247,7 +247,7 @@ function MobileTable() {
             <Box sx={styles.colLeft}>Other Agency #2</Box>
             <Box sx={{...styles.colRight, justifyContent: "end"}}>
               {/* <CheckIcon sx={styles.checkIcon}></CheckIcon> */}
-              <Typography sx={
+              <Typography component={'span'} variant={'body2'} sx={
                 {
                     fontSize: "25px",
                     fontWeight: "400",

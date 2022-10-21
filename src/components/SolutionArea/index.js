@@ -114,28 +114,28 @@ function SolutionArea() {
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
       icon: LinkSvg,
-      sharp: "service_shap",
+      sharp: "service-shap",
     },
     {
       title: "Marketing Automation",
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
       icon: SettingSvg,
-      sharp: "service_shap_two",
+      sharp: "service-shap-two",
     },
     {
       title: "Helpdesk Software",
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
       icon: ChatSvg,
-      sharp: "service_shap_three",
+      sharp: "service-shap-three",
     },
     {
       title: "Sales Software",
       subTitle:
         "Connect to a multitude of sources like files and feeds, popular apps, cloud and onpremise databases, custom apps .",
       icon: SoftwareSvg,
-      sharp: "service_shap_four",
+      sharp: "service-shap-four",
     },
   ];
   return (
@@ -174,7 +174,7 @@ function SolutionArea() {
           }}
           alt="Paella dish"
         />
-        <Typography sx={styles.heading}>
+        <Typography component={'span'} variant={'body2'} sx={styles.heading}>
           Singular&nbsp;
           <Typography
             sx={{
@@ -207,7 +207,7 @@ function SolutionArea() {
           </Typography>
           &nbsp;to all of your activities
         </Typography>
-        <Typography sx={styles.subHeading}>
+        <Typography component={'span'} variant={'body2'} sx={styles.subHeading}>
           You said I'd feel better if I just worked hard without lifting me up
         </Typography>
         <Container sx={styles.container}>
@@ -242,8 +242,8 @@ function SolutionArea() {
                   }}
                 ></img>
               </Box>
-              <Typography sx={styles.title}>{solution.title}</Typography>
-              <Typography sx={styles.subTitle}>{solution.subTitle}</Typography>
+              <Typography component={'span'} variant={'body2'} sx={styles.title}>{solution.title}</Typography>
+              <Typography component={'span'} variant={'body2'} sx={styles.subTitle}>{solution.subTitle}</Typography>
               <Link sx={styles.link} color="inherit">
                 Read more
               </Link>

@@ -47,7 +47,7 @@ function PriceArea() {
   return (
     <>
       <Box className="container-fluid" sx={styles.containerFluid}>
-        <Typography sx={styles.heading}>
+        <Typography component={'span'} variant={'body2'} sx={styles.heading}>
           We are&nbsp;
           <Typography
             sx={{
@@ -82,7 +82,7 @@ function PriceArea() {
           &nbsp;than<br></br>
           our competitors
         </Typography>
-        <Typography sx={styles.subHeading}>
+        <Typography component={'span'} variant={'body2'} sx={styles.subHeading}>
           You said I'd feel better if I just worked hard without lifting me up
         </Typography>
         <DesktopTable></DesktopTable>

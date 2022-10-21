@@ -81,12 +81,12 @@ function CallActionArea() {
       <Box className="container-fluid" sx={styles.containerFluid}>
         <CardMedia
           component="img"
-          image={require("../../assets/callActionArea/zigzag_two.png")}
+          image={require("../../assets/callActionArea/zigzag-two.png")}
           sx={styles.backgroundImg}
           alt="Paella dish"
         ></CardMedia>
         <Container sx={styles.container}>
-          <Typography sx={styles.heading}>
+          <Typography component={'span'} variant={'body2'} sx={styles.heading}>
             Never miss an update
             <div
               style={{
@@ -96,10 +96,10 @@ function CallActionArea() {
                 zIndex: "1",
               }}
             >
-              <img src={require("../../assets/callActionArea/line.png")}></img>
+              <Typography component={'span'} variant={'body2'} ></Typography>
             </div>
           </Typography>
-          <Typography sx={styles.subHeading}>
+          <Typography component={'span'} variant={'body2'} sx={styles.subHeading}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit sed
             <br></br>
             do eiusmod tempor incididunt ut labore.

@@ -101,7 +101,7 @@ function DesktopTable() {
       <Box className="table" sx={styles.table}>
         <CardMedia
           component="img"
-          image={require("../../assets/priceArea/price_bg_shap.png")}
+          image={require("../../assets/priceArea/price-bg-shap.png")}
           sx={{
             width: {
               sm: "0",
