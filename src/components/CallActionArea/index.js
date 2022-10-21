@@ -51,7 +51,6 @@ const styles = {
     position: "relative",
   },
   subHeading: {
-    // width: "50%",
     textAlign: "center",
     fontSize: "18px",
     lineHeight: "30px",
@@ -96,7 +95,7 @@ function CallActionArea() {
                 zIndex: "1",
               }}
             >
-              <img src={require("../../assets/callActionArea/line.png")}></img>
+              <img alt="" src={require("../../assets/callActionArea/line.png")}></img>
             </div>
           </Typography>
           <Typography sx={styles.subHeading}>

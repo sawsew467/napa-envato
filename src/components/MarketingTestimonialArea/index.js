@@ -36,7 +36,6 @@ const styles = {
       xs: "flex-start",
       md: "center",
     },
-    // columnGap: "24px"
   },
 };
 
@@ -261,7 +260,6 @@ function MarketingTestimonialArea() {
               <Box
                 sx={{
                   marginTop: {
-                    // xs: "130px",
                     md: "0",
                   },
                   position: "relative",
@@ -292,6 +290,7 @@ function MarketingTestimonialArea() {
                 ></Box>
                 <div>
                   <img
+                    alt=""
                     src={require("../../assets/marketingTestimonialArea/chat.png")}
                     style={{
                       zIndex: "1",
@@ -307,6 +306,7 @@ function MarketingTestimonialArea() {
                 </div>
                 <div>
                   <img
+                    alt=""
                     src={require("../../assets/marketingTestimonialArea/img_one.png")}
                     style={{
                       zIndex: "1",
@@ -321,6 +321,7 @@ function MarketingTestimonialArea() {
                 </div>
                 <div>
                   <img
+                    alt=""
                     src={require("../../assets/marketingTestimonialArea/img_two.png")}
                     style={{
                       zIndex: "1",
@@ -335,6 +336,7 @@ function MarketingTestimonialArea() {
                 </div>
                 <div>
                   <img
+                    alt=""
                     src={require("../../assets/marketingTestimonialArea/testimonial_img.png")}
                     style={{
                       zIndex: "1",

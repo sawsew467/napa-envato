@@ -1,4 +1,4 @@
-import { CardMedia, Grid, Typography } from "@mui/material";
+import { CardMedia, Typography } from "@mui/material";
 import { Box, Container } from "@mui/system";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import React from "react";

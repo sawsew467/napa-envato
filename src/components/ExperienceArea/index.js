@@ -207,7 +207,6 @@ function ExperienceArea() {
                   color: "#FC6B75",
                   fontFamily: "'Fraunces', serif",
                   position: "relative",
-                  // marginBottom: "20px",
                   letterSpacing: "-0.43px",
                   "&::before": {
                     content: '""',

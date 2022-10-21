@@ -69,7 +69,6 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-end",
-    // flex: 1,
   },
 };
 

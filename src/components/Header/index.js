@@ -109,7 +109,6 @@ const styles = {
   },
   Typography: {
     fontFamily: "'Arimo', sans-serif",
-    // color: "#ddd",
   },
   KeyboardArrowDownIcon: {
     width: "14px",
@@ -120,7 +119,6 @@ const styles = {
       xs: "block",
       md: "none",
     },
-    // marginLeft: "24px",
     marginLeft: "12px",
     margin: {
       xs: "0",

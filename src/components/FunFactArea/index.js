@@ -23,7 +23,6 @@ const styles = {
     },
     padding: 0,
     justifyContent: "center",
-    // gap: "24px",
     margin: "0 auto",
   },
   card: {

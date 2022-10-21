@@ -1,6 +1,6 @@
 import React from "react";
 import DesktopTable from "./DesktopTable";
-import { Box, Link, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import MobileTable from "./MobileTable";
 
 const styles = {

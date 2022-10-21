@@ -68,7 +68,6 @@ const styles = {
     },
     lineHeight: "40px",
     borderRadius: "3px",
-    display: "flex",
     alignItems: "center",
     transition: "all 0.3s",
     cursor: "pointer",
@@ -94,9 +93,7 @@ const styles = {
       md: "8px 35px",
     },
     lineHeight: "40px",
-    // margin: "13px 33px",
     borderRadius: "3px",
-    display: "flex",
     alignItems: "center",
     transition: "all 0.3s",
     cursor: "pointer",
@@ -115,12 +112,10 @@ const styles = {
       xs: "0",
       sm: "0 50px",
     },
-    // width: "1080px",
   },
   dashBoard: {
     margin: "0 auto",
     display: "block",
-    // width: "auto",
   },
   card1: {
     display: {

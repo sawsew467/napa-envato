@@ -8,7 +8,6 @@ const styles = {
       sm: "140px 0",
     },
     backgroundColor: "#F4F4F4",
-    // height: "154px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "space-between",

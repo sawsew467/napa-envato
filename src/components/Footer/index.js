@@ -58,7 +58,7 @@ function Footer() {
             }}
           >
             <div>
-              <img src={require("../../assets/logo_4.png")}></img>
+              <img alt="" src={require("../../assets/logo_4.png")}></img>
             </div>
             <Typography
               sx={{

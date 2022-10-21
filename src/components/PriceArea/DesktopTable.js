@@ -29,7 +29,6 @@ const styles = {
     fontSize: "18px",
     color: "#212121",
     fontWeight: 500,
-    color: "#212121",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -66,7 +65,6 @@ const styles = {
     fontSize: "18px",
     color: "#212121",
     fontWeight: 400,
-    color: "#212121",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -79,7 +77,6 @@ const styles = {
     fontSize: "25px",
     color: "#212121",
     fontWeight: 500,
-    color: "#212121",
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
@@ -154,7 +151,7 @@ function DesktopTable() {
               ColumnGap: "8px",
             }}
           >
-            <img src={require("../../assets/priceArea/bell-price.png")}></img>
+            <img alt="" src={require("../../assets/priceArea/bell-price.png")}></img>
             &nbsp;TerraMart
           </Box>
           <Box sx={styles.tbHead}>
@@ -335,7 +332,7 @@ function DesktopTable() {
           >
             Get started&nbsp;
             <div>
-              <img src={require("../../assets/priceArea/arrow1.png")}></img>
+              <img alt="" src={require("../../assets/priceArea/arrow1.png")}></img>
             </div>
           </Box>
           <Box sx={styles.secondaryItem}>

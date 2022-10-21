@@ -19,11 +19,6 @@ const styles = {
     position: "relative",
   },
   heading: {
-    // width: {
-    //   xs: "366px",
-    //   sm: "696px",
-    //   md: "936px",
-    // },
     width: {
       xs: "100%",
       sm: "650px",
@@ -64,7 +59,6 @@ const styles = {
       sm: "696px",
       md: "1176px",
     },
-    // width: "1176px",
     display: "flex",
     flexDirection: "row",
     flexWrap: "wrap",
@@ -236,6 +230,7 @@ function SolutionArea() {
                 }}
               >
                 <img
+                  alt=""
                   src={solution.icon}
                   sx={{
                     objectFit: "contain",

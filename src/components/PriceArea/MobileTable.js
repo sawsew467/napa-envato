@@ -216,7 +216,6 @@ function MobileTable() {
           >
             <Box sx={styles.colLeft}>TerraMart</Box>
             <Box sx={styles.colRight}>
-              {/* <CheckIcon sx={styles.checkIcon}></CheckIcon> */}
             </Box>
           </Box>
           <Box
@@ -227,7 +226,6 @@ function MobileTable() {
           >
             <Box sx={styles.colLeft}>Other Agency #1</Box>
             <Box sx={{...styles.colRight, justifyContent: "end"}}>
-              {/* <CloseIcon sx={styles.closeIcon}></CloseIcon> */}
               <Typography sx={
                 {
                     fontSize: "25px",
@@ -246,7 +244,6 @@ function MobileTable() {
           >
             <Box sx={styles.colLeft}>Other Agency #2</Box>
             <Box sx={{...styles.colRight, justifyContent: "end"}}>
-              {/* <CheckIcon sx={styles.checkIcon}></CheckIcon> */}
               <Typography sx={
                 {
                     fontSize: "25px",

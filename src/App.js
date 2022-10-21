@@ -1,15 +1,15 @@
-import CallActionArea from "./components/CallActionArea/CallActionArea";
-import ClientLogoArea from "./components/ClientLogoArea/ClientLogoArea";
-import ExperienceArea from "./components/ExperienceArea/ExperienceArea";
-import FeatureArea from "./components/FeatureArea/FeatureArea";
-import Footer from "./components/Footer/Footer";
-import FunFactArea from "./components/FunFactArea/FunFactArea";
-import Header from "./components/Header/Header";
-import MaketingArea from "./components/MaketingArea/MaketingArea";
-import MarketingTestimonialArea from "./components/MarketingTestimonialArea/MarketingTestimonialArea";
+import CallActionArea from "./components/CallActionArea";
+import ClientLogoArea from "./components/ClientLogoArea";
+import ExperienceArea from "./components/ExperienceArea";
+import FeatureArea from "./components/FeatureArea";
+import Footer from "./components/Footer";
+import FunFactArea from "./components/FunFactArea";
+import Header from "./components/Header";
+import MaketingArea from "./components/MaketingArea";
+import MarketingTestimonialArea from "./components/MarketingTestimonialArea";
 import PriceArea from "./components/PriceArea/PriceArea";
-import RateArea from "./components/RateArea/RateArea";
-import SolutionArea from "./components/SolutionArea/SolutionArea";
+import RateArea from "./components/RateArea";
+import SolutionArea from "./components/SolutionArea";
 
 function App() {
   return (
